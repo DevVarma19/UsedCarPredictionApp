@@ -10,8 +10,10 @@ body{
     background-color: black;
 }
 header {
+/*
     background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), 
         url(static/img2.jpg);
+*/
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -96,15 +98,14 @@ h3{
 
 /*************Fuel**************/
 .form{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url({{ url_for('static', filename='img/img3.jpg') }});
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(static/img/webcars2.png);
     background-size: cover;
     background-position: center;
     height: auto;
     width: auto;
     background-attachment: fixed;
 }
-.form p{
-    margin-left: 0px;
+.form p{    
     font-family:monospace;
     font-style: italic;
     font-size: 15px;
@@ -124,7 +125,8 @@ h3{
     background-color: #DEE3E2;
     padding: 20px;
     width: 300px;
-    margin-left: 600px;
+    margin-top: 250px;
+    margin-left: 550px;
     justify-content: center;
 }
 
@@ -159,4 +161,4 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #DE7119;
-}
+} 

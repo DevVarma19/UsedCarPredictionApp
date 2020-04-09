@@ -2,13 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Search</title><link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <title>Search</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    
+    <style>
+            header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+        url({{ url_for('static',filename='img/img.jpg') }});
+        }
+    </style>
 </head>
+
 <body class="form">
+<header>
 <img src="static/img/webcars2.png">
-   <p>
-       Enter the details to find your car.
-   </p>
     <div class="container">
         <form action = "/predictprice" method='post'>
 
@@ -314,5 +321,6 @@
 
         </form>
     </div>
+    </header>
 </body>
 </html>
